@@ -21,8 +21,8 @@ os.makedirs(run_folder, exist_ok=True)
 CSV_PATH = os.path.join(run_folder, f"run_{run_id:03d}.csv")
 
 
-train_data = np.loadtxt('1kPCA.csv', delimiter=',', skiprows=1)
-test_data = np.loadtxt('1kPCA.csv', delimiter=',', skiprows=1)
+train_data = np.loadtxt('DATA.csv', delimiter=',', skiprows=1)
+test_data = np.loadtxt('DATA.csv', delimiter=',', skiprows=1)
 
 print("Train unique labels:", np.unique(train_data[:, -1]))
 print("Test  unique labels:", np.unique(test_data[:, -1]))
